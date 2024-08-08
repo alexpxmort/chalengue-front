@@ -2,11 +2,12 @@
 import { ReactNode } from 'react';
 import { IProduct } from '..';
 import Home from '../components/Home';
+import { BASE_URL } from '../actions/api';
 
 
 
 async function fetchProducts():Promise<IProduct[]> {
-  const response = await fetch('http://localhost:3000/products'); 
+  const response = await fetch(`${BASE_URL}/products`); 
   if (!response.ok) {
     throw new Error('Failed to fetch products');
   }

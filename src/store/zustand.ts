@@ -2,7 +2,7 @@ import { IProduct } from '@/app';
 import { create } from 'zustand';
 
 
-interface CartItem extends IProduct {
+export interface CartItem extends IProduct {
   quantity: number;
 }
 
