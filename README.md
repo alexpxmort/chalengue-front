@@ -8,7 +8,7 @@ Para começar a usar o servidor de desenvolvimento, siga estes passos:
 
 ### 1. Instale as Dependências
 
-Primeiro, certifique-se de que todas as dependências necessárias estão instaladas. Abra o seu terminal e execute:
+Primeiro Certifique-se de que você tenha o [Node.js](https://nodejs.org) instalado. Em seguida, execute o comando abaixo para instalar as dependências do projeto:
 
 ```bash
 npm install
