@@ -30,6 +30,15 @@ O servidor de desenvolvimento estará ouvindo na porta `8000`. Você pode acessa
 
 [http://localhost:8000](http://localhost:8000)
 
+## Layout
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
 ## Mantenha-se em Contato
 
 - **Autor:** [Alex Pereira de Oliveira](https://www.linkedin.com/in/alex-pereira-de-oliveira-628245160/)
