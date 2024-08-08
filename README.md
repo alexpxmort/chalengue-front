@@ -8,7 +8,14 @@ Para começar a usar o servidor de desenvolvimento, siga estes passos:
 
 ## Obs - Certifique- se de ter o projeto do back end funcionando [BackEnd](https://github.com/alexpxmort/challengue-api.git)
 
-### 1. Instale as Dependências
+### 1. Clone o Repositório:
+
+```bash
+git  clone https://github.com/alexpxmort/chalengue-front.git
+cd chalengue-front
+```
+
+### 2. Instale as Dependências
 
 Primeiro Certifique-se de que você tenha o [Node.js](https://nodejs.org) instalado. Em seguida, execute o comando abaixo para instalar as dependências do projeto:
 
@@ -18,7 +25,7 @@ npm install
 yarn install
 ```
 
-### 2. Inicie o Servidor de Desenvolvimento
+### 3. Inicie o Servidor de Desenvolvimento
 
 Inicie o servidor de desenvolvimento com o comando:
 
