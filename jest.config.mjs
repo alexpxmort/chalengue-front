@@ -15,7 +15,8 @@ const config = {
   },
   collectCoverageFrom: [
     'src/**/*.ts',
-    'src/**/*.tsx',
+    'src/app/**/*.tsx',
+    '!src/app/layout.tsx',
   ],
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.js']

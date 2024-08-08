@@ -2,9 +2,15 @@ import { useState, useCallback } from 'react';
 
 type AlertType = 'success' | 'error' | 'warning' | 'info';
 
-interface Alert {
+ interface Alert {
   type: AlertType;
   message: string;
+}
+
+export interface AlertState{
+  alert: Alert| null;
+  showAlert:(type: AlertType, message: string)=>void;
+  closeAlert: ()=> void;
 }
 
 export const useCustomAlert = () => {

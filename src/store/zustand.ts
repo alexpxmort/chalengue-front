@@ -6,7 +6,7 @@ export interface CartItem extends IProduct {
   quantity: number;
 }
 
-interface StoreState {
+export interface StoreState {
   cart: CartItem[];
   products: IProduct[];
   productsFiltered: IProduct[];
