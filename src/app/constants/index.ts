@@ -1,0 +1,1 @@
+export const FALLBACK_URL_NO_IMAGE = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6DTpUYmtIf8QBcAyKjnqoivQqODPlbY8dyw&s'

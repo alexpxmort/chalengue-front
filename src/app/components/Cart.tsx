@@ -7,6 +7,8 @@ import { useMemo, useState } from 'react';
 import CheckoutModal from './CheckoutModa';
 import { useCustomAlert } from '../hooks/useCustomAlert';
 import CustomAlert from './CustomAlert';
+import ImageWithFallback from './ImageFallBack';
+import { FALLBACK_URL_NO_IMAGE } from '../constants';
 
 const Cart = () => {
   const cart = useStore((state) => state.cart);
@@ -93,12 +95,21 @@ const Cart = () => {
         )}
       
       {cart.length === 0 ? (
-        <p className="text-gray-500"> Carrinho  vazio!</p>
+        <p className="py-3 text-gray-500"> Carrinho  vazio!</p>
       ) : (
         <ul>
           {cart.map((item,idx) => (
-            <li key={item.id} className="flex justify-between items-center border-b py-2">
+            <li key={item.id} className="flex flex-col sm:flex-row  justify-between items-center border-b py-2">
+                <ImageWithFallback
+                  src={item.image}
+                  alt="Imagem do Produto"
+                  style={{marginRight: 5}}
+                  width={80} 
+                  height={60} 
+                  fallbackSrc={FALLBACK_URL_NO_IMAGE} 
+                />
               <span>{item.name}</span>
+             
               <span className='mx-4'>${item.price}</span>
               <span> X </span>
               <input

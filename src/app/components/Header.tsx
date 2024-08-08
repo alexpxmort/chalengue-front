@@ -12,11 +12,11 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header className="flex mb-6 items-center justify-between p-4 bg-blue-600 text-white">
+        <header className="w-full flex mb-6 items-center  p-4 bg-blue-600 text-white">
             <h1 className="text-2xl font-bold">Shopex</h1>
-            <div className="relative">
+            <div className="w-full relative">
                 <button onClick={toggleCart} className="relative">
-                    <ShoppingCartIcon className="h-6 w-6 text-white" />
+                    <ShoppingCartIcon className="h-6 w-6 text-white mt-2 mx-3" />
                     {cart.length > 0 && (
                         <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                             {cart.length}
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                     )}
                 </button>
                 {isCartOpen && (
-                    <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-lg p-4 z-10">
+                    <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-lg p-4 z-10 h-80 overflow-x-auto">
                         <Cart />
                     </div>
                 )}
