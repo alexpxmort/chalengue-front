@@ -22,6 +22,7 @@ const ImageWithFallback = ({ src, alt, width, height, fallbackSrc,style }:ImageW
     <Image
       src={imgSrc}
       alt={alt}
+      data-testid="image"
       width={width}
       height={height}
       onError={handleError} 

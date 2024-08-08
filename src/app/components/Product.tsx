@@ -16,7 +16,7 @@ const Product = ({ product }:ProductProps) => {
   const addToCart = useStore((state) => state.addToCart);
 
   return (
-    <div className="p-4 border rounded-lg shadow-lg mt-3">
+    <div className="p-4 border rounded-lg shadow-lg mt-3" data-testid="product">
       <h2 className="text-xl font-bold">{product.name}</h2>
       <ImageWithFallback
         src={product.image}

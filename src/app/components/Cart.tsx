@@ -4,11 +4,11 @@ import useStore, { CartItem } from '@/store/zustand';
 import { TrashIcon } from '@heroicons/react/outline';
 import { createOrder } from '../actions/createOrder';
 import { useMemo, useState } from 'react';
-import CheckoutModal from './CheckoutModa';
 import { useCustomAlert } from '../hooks/useCustomAlert';
 import CustomAlert from './CustomAlert';
 import ImageWithFallback from './ImageFallBack';
 import { FALLBACK_URL_NO_IMAGE } from '../constants';
+import CheckoutModal from './CheckoutModal';
 
 const Cart = () => {
   const cart = useStore((state) => state.cart);

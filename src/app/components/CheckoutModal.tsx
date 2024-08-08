@@ -15,12 +15,9 @@ const CheckoutModal = ({ isOpen, onClose, onSubmit }:CheckoutModalProps) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
 
-    if (name && email) {
       onSubmit({ name, email });
       onClose(); 
-    } else {
-      alert('Por favor, preencha todos os campos.');
-    }
+    
   };
 
   if (!isOpen) return null; 
