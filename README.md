@@ -6,6 +6,8 @@ Bem-vindo ao projeto Next.js! Este é um framework poderoso e flexível para con
 
 Para começar a usar o servidor de desenvolvimento, siga estes passos:
 
+## Obs - Certifique- se de ter o projeto do back end funcionando [BackEnd](https://github.com/alexpxmort/challengue-api.git)
+
 ### 1. Instale as Dependências
 
 Primeiro Certifique-se de que você tenha o [Node.js](https://nodejs.org) instalado. Em seguida, execute o comando abaixo para instalar as dependências do projeto:
